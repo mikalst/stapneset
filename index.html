@@ -4,188 +4,188 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
 <style>
-body,h1 {font-family: "Montserrat", sans-serif}
-img {margin-bottom: -7px}
-.w3-row-padding img {margin-bottom: 12px}
-    
-/* Style the Image Used to Trigger the Modal */
-#myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (Image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption { 
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-    
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-} 
-
+.bgimg-1 {
+  position: relative;
+  opacity: 1.0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/image1.jpg");
+  height: 50%;
+}    
 </style>
-
+</head>
+    
 <body>
 
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photos</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Shop</a>
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+    <a href="#home" class="w3-bar-item w3-button"><b>Stapnesveien</b> </a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">Bilder</a>
+      <a href="#about" class="w3-bar-item w3-button">Om</a>
+      <a href="#contact" class="w3-bar-item w3-button">Kontakt</a>
+    </div>
   </div>
-</nav>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
-
-<!-- Header -->
-<div class="w3-opacity">
-<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
-<div class="w3-clear"></div>
-<header class="w3-center w3-padding-24">
-  <h1><b>Stapnes</b></h1>
-  <p><b>Stedet du ikke visste du trengte å være!</b></p>
-</header>
 </div>
 
-<!-- Photo Grid -->
-<div class="w3-row" id="myGrid" style="margin-bottom:32px">
-  <div class="w3-third w3-margin-left">
-    <img onclick="focus_image(this)" src="/images/image1.jpg" style="width:100%; margin-bottom:10px" alt="Utsikt fra Stapnes">
-    <img onclick="focus_image(this)" src="/images/image2.jpg" style="width:100%; margin-bottom:10px" alt="Stapnes anno 1954">
-    <img onclick="focus_image(this)" src="/images/image3.jpg" style="width:100%; margin-bottom:10px" alt="Bilde av gammel gård">
-    <img onclick="focus_image(this)" src="/images/image4.jpg" style="width:100%; margin-bottom:10px" alt="Utsikt fra Stapnes">
+<div class="bgimg-1" style="width:100%; height:400px">
+</div>
+
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-12" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Bilder</h3>
   </div>
 
-<!-- End Page Content -->
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+        <img src="/w3images/house2.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+        <img src="/w3images/house3.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+        <img src="/w3images/house4.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+        <img src="/w3images/house2.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+        <img src="/w3images/house4.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+        <img src="/w3images/house3.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+      <h3>John Doe</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <h3>Jane Doe</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+      <h3>Mike Ross</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
+      <h3>Dan Star</h3>
+      <p class="w3-opacity">Architect</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your and our next project.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+<!-- End page content -->
 </div>
-    
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>   
+
+<!-- Google Map -->
+<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
- 
-    
+
+<!-- Add Google Maps -->
 <script>
-    
-// Open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.width = "100%";
-    document.getElementById("mySidebar").style.display = "block";
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
 }
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
-
- // Get the modal
-var modal = document.getElementById('myModal');
-var modalImg = document.getElementById("img01");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-function focus_image(image) {
-    var captionText = document.getElementById("caption");
-    modal.style.display = "block";
-    modalImg.src = image.src;
-    captionText.innerHTML = image.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-    
-
 </script>
-
-</body>
-</html>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
