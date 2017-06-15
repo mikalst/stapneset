@@ -7,6 +7,7 @@
 
 <head>
 <style>
+    
 .bgimg-1 {
   position: relative;
   opacity: 1.0;
@@ -15,7 +16,17 @@
   background-size: cover;
   background-image: url("images/image1.jpg");
   height: 50%;
-}    
+}
+    
+.outer {
+    width:100%;    
+    }
+
+.mySlides {
+    height:100%;
+    margin: auto;
+    
+    }
 </style>
 </head>
     
@@ -27,123 +38,54 @@
     <a href="#home" class="w3-bar-item w3-button"><b>Stapnesveien</b> </a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button">Bilder</a>
       <a href="#about" class="w3-bar-item w3-button">Om</a>
+      <a href="#images" class="w3-bar-item w3-button">Bilder</a>
+      <a href="#googleMap" class="w3-bar-item w3-button">Kart</a>
       <a href="#contact" class="w3-bar-item w3-button">Kontakt</a>
     </div>
   </div>
 </div>
 
+<!-- Background Image -->
 <div class="bgimg-1" style="width:100%; height:400px">
 </div>
 
-
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
-
-  <!-- Project Section -->
-  <div class="w3-container w3-padding-12" id="projects">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Bilder</h3>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="/w3images/house2.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="/w3images/house3.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="/w3images/house4.jpg" alt="House" style="width:100%">
-      </div>
-    </div>
-  </div>
-
-  <div class="w3-row-padding">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
-        <img src="/w3images/house2.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
-        <img src="/w3images/house5.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
-        <img src="/w3images/house4.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
-        <img src="/w3images/house3.jpg" alt="House" style="width:99%">
-      </div>
-    </div>
-  </div>
-
-  <!-- About Section -->
-  <div class="w3-container w3-padding-32" id="about">
+    
+<!-- About and Image Section -->
+<div class="w3-row outer">
+  <div class="w3-container w3-padding w3-half w3-center" id="about">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-      laboris nisi ut aliquip ex ea commodo consequat.
+    <p>Her går noe tekst. Her går noe tekst. Her går noe tekst. Her går noe tekst. Her går noe tekst. Her går noe tekst.Her går noe tekst
     </p>
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Bilder</h3>
+      <div id="images" class="w3-container w3-padding w3-center" style="height:200px">
+        <img class="mySlides w3-center" src="images/image2.jpg">
+        <img class="mySlides w3-center" src="images/image3.jpg">
+        <img class="mySlides w3-center" src="images/image4.jpg">
+        <button class="w3-button" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button" onclick="plusDivs(+1)">&#10095;</button>
+    </div>
   </div>
+    <div class="w3-container w3-padding-32 w3-half w3-center" id="twitter">
+      <a class="twitter-timeline"  href="https://twitter.com/hashtag/stapneset" data-widget-id="875302827228311552">#stapneset Tweets</a>
+    </div>
+</div>
 
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-      <h3>John Doe</h3>
-      <p class="w3-opacity">CEO & Founder</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-      <h3>Jane Doe</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-      <h3>Mike Ross</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-      <h3>Dan Star</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+<!-- Google Map Section -->
+<div class="w3-row-padding outer">
+  <div class="w3-container" id="map">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Kart</h3>
+    <div id="googleMap" class="w3-container w3-padding w3-center" style="height:300px">
     </div>
   </div>
+</div>    
 
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-    <p>Lets get in touch and talk about your and our next project.</p>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Kontakt</h3>
+    <p>Har du kommentarer eller anbefalninger til siden?</p>
     <form action="/action_page.php" target="_blank">
       <input class="w3-input" type="text" placeholder="Name" required name="Name">
       <input class="w3-input w3-section" type="text" placeholder="Email" required name="Email">
@@ -158,19 +100,16 @@
 <!-- End page content -->
 </div>
 
-<!-- Google Map -->
-<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
-
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-16">
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 
-<!-- Add Google Maps -->
+<!-- Google Maps -->
 <script>
 function myMap()
 {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  myCenter=new google.maps.LatLng(58.382791, 6.040923);
   var mapOptions= {
     center:myCenter,
     zoom:12, scrollwheel: false, draggable: false,
@@ -184,8 +123,12 @@ function myMap()
   marker.setMap(map);
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpVhiQkBylimWSSohdaS8KHj-8ecI59_Y&callback=myMap"></script>
+
+<script src="slideshow.js"></script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</body>
+</html>
