@@ -33,14 +33,15 @@
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
+<div class="">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
     <a href="#home" class="w3-bar-item w3-button"><b>Stapneset</b> </a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">Om</a>
+      <a href="#weather" class="w3-bar-item w3-button">Vær</a>
       <a href="#images" class="w3-bar-item w3-button">Bilder</a>
-      <a href="#googleMap" class="w3-bar-item w3-button">Kart</a>
+      <a href="#twitter" class="w3-bar-item w3-button">Twitter</a>
+      <a href="#map" class="w3-bar-item w3-button">Kart</a>
       <a href="#contact" class="w3-bar-item w3-button">Kontakt</a>
     </div>
   </div>
@@ -51,40 +52,49 @@
 </div>
 
 <!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
+<div class="w3-content w3-padding w3-center" style="max-width:1564px">
     
 <!-- About and Image Section -->
-<div class="w3-row outer">
-  <div class="w3-container w3-padding w3-half w3-center" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
-    <p>Her går noe tekst. Her går noe tekst. Her går noe tekst. Her går noe tekst. Her går noe tekst. Her går noe tekst.Her går noe tekst
-    </p>
-      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Bilder</h3>
-      <div id="images" class="w3-container w3-padding w3-center" style="height:200px">
-        <img class="mySlides w3-center" src="images/image2.jpg">
-        <img class="mySlides w3-center" src="images/image3.jpg">
-        <img class="mySlides w3-center" src="images/image4.jpg">
-        <button class="w3-button" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button" onclick="plusDivs(+1)">&#10095;</button>
+<div class="w3-row">
+  <div class="w3-container w3-padding w3-twothird" id="about">
+      
+    <!-- Yr.no Integration -->
+    <div class="w3-container w3-center">
+      <h3 id="weather" class="w3-border-bottom w3-border-light-grey">Vær</h3>
+
+      <script src="http://www.yr.no/place/Norway/Rogaland/Eigersund/Stapnes/external_box_three_days.js"></script><noscript><a href="http://www.yr.no/place/Norway/Rogaland/Eigersund/Stapnes/">yr.no: Forecast for Stapnes</a></noscript>
     </div>
+
+    <!-- Images -->
+    <div class="w3-container w3-center">
+      <h3 id="images" class="w3-border-bottom w3-border-light-grey">Bilder</h3>
+      <img class="mySlides w3-center" style="height:300px" src="images/image2.jpg">
+      <img class="mySlides w3-center" style="height:300px" src="images/image3.jpg">
+      <img class="mySlides w3-center" style="height:300px" src="images/image4.jpg">
+      <button class="w3-button" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button" onclick="plusDivs(+1)">&#10095;</button>
+    </div>
+      
   </div>
-    <div class="w3-container w3-padding-32 w3-half w3-center" id="twitter">
-      <a class="twitter-timeline"  href="https://twitter.com/hashtag/stapneset" data-widget-id="875319488304099328">#stapneset Tweets</a>
-    </div>
+    
+  <div class="w3-container w3-padding w3-third w3-center">
+    <h3 id="twitter" class="w3-border-bottom w3-border-light-grey">Twitter</h3>
+    <a class="twitter-timeline"  href="https://twitter.com/hashtag/stapneset" data-widget-id="875319488304099328" data-height="700px">#stapneset Tweets</a>
+  </div>
 </div>
 
 <!-- Google Map Section -->
-<div class="w3-row-padding outer">
-  <div class="w3-container" id="map">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Kart</h3>
+<div class="w3-row">
+  <div class="w3-container w3-center w3-padding" id="map">
+    <h3 class="w3-border-bottom w3-border-light-grey ">Kart</h3>
     <div id="googleMap" class="w3-container w3-padding w3-center" style="height:300px">
     </div>
   </div>
 </div>
           
   <!-- Contact Section -->
-  <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Kontakt</h3>
+<div class="w3-row" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey ">Kontakt</h3>
     <p>Har du kommentarer eller anbefalninger til siden?</p>
     <form action="/action_page.php" target="_blank">
       <input class="w3-input" type="text" placeholder="Name" required name="Name">
@@ -102,7 +112,7 @@
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-16">
-  <p>Laget av Mikal S. Stapnes</p><p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a>, Twitter API, Google Maps API</p>
+  <p>Laget av Mikal S. Stapnes</p><p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a>, Twitter API, Google Maps API, Yr.no JS-API</p>
 </footer>
 
 <!-- Google Maps -->
@@ -128,7 +138,10 @@ function myMap()
 
 <script src="slideshow.js"></script>
 
+<!-- Twitter Integration -->
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    
+
 
 </body>
 </html>
