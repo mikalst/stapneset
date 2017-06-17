@@ -18,21 +18,21 @@
   height: 50%;
 }
     
-.outer {
-    width:100%;    
-    }
-
 .mySlides {
     height:100%;
     margin: auto;
-    
+    width:100%;
+    max-height:400px;
     }
+    
 </style>
+    
 </head>
     
+
 <body>
 
-<!-- Navbar (sit on top) -->
+<!-- Navbar -->
 <div class="">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
     <a href="#home" class="w3-bar-item w3-button"><b>Stapneset</b> </a>
@@ -52,25 +52,28 @@
 </div>
 
 <!-- Page content -->
-<div class="w3-content w3-padding w3-center" style="max-width:1564px">
+<div class="w3-content w3-padding w3-center" style="max-width:1564px; width:100%">
     
 <!-- About and Image Section -->
 <div class="w3-row">
   <div class="w3-container w3-padding w3-twothird" id="about">
       
     <!-- Yr.no Integration -->
-    <div class="w3-container w3-center">
+    <div class="w3-container w3-center" style="width:100%">
       <h3 id="weather" class="w3-border-bottom w3-border-light-grey">Vær</h3>
 
-      <script src="http://www.yr.no/place/Norway/Rogaland/Eigersund/Stapnes/external_box_three_days.js"></script><noscript><a href="http://www.yr.no/place/Norway/Rogaland/Eigersund/Stapnes/">yr.no: Forecast for Stapnes</a></noscript>
+      <script src="http://www.yr.no/place/Norway/Rogaland/Eigersund/Stapnes/external_box_three_days.js"></script>
+      <noscript>
+          <a href="http://www.yr.no/place/Norway/Rogaland/Eigersund/Stapnes/">yr.no: Forecast for Stapnes</a>
+      </noscript>
     </div>
 
     <!-- Images -->
-    <div class="w3-container w3-center">
+    <div class="w3-container w3-center" style="width:100%">
       <h3 id="images" class="w3-border-bottom w3-border-light-grey">Bilder</h3>
-      <img class="mySlides w3-center" style="height:300px" src="images/image2.jpg">
-      <img class="mySlides w3-center" style="height:300px" src="images/image3.jpg">
-      <img class="mySlides w3-center" style="height:300px" src="images/image4.jpg">
+      <img class="mySlides w3-center" src="images/image2.jpg">
+      <img class="mySlides w3-center" src="images/image3.jpg">
+      <img class="mySlides w3-center" src="images/image4.jpg">
       <button class="w3-button" onclick="plusDivs(-1)">&#10094;</button>
       <button class="w3-button" onclick="plusDivs(+1)">&#10095;</button>
     </div>
