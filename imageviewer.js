@@ -3,6 +3,8 @@
 	var pictureIndex = 0;
 	var pictures = [];
 
+    $.getScript('imageText.js');
+
 	function getFiles() {
 		$.ajax(baseUrl).success(function(data) {
 			pictures = [];
@@ -25,7 +27,7 @@
 			pictureIndex = pictures.length - 1;
 		}
 		$('#viewer').attr('src', pictures[pictureIndex]);
-		$('#info').text((pictureIndex + 1) + "/" + pictures.length);
+		$('#info').text(imageText[pictureIndex]);
 	}
 
 	getFiles();
