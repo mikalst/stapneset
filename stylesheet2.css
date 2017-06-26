@@ -1,0 +1,20 @@
+.bgimg-1 {
+  position: absolute;
+  
+  opacity: 1.0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/image1.jpg");
+  height:340px;
+  width:101%;
+  box-shadow:inset -2px -10px 10px 0px rgba(255,255,255,1);
+
+}
+    
+.mySlides {
+    height:100%;
+    margin: auto;
+    width:100%;
+    max-height:500px;
+    }
