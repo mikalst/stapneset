@@ -43,13 +43,6 @@
 
 <!-- Page content -->
 <div class="w3-content w3-center" style="max-width:1564px; width:100%">
-    
-<!-- About and Image Section -->
-<div class="w3-row">
-  <div class="w3-container w3-padding" id="about">
-
-  </div>
-</div>
 
 <div class="w3-row">
 
@@ -63,6 +56,7 @@
       <div class="w3-container w3-center">
         <h3 id="images" class="w3-border-bottom w3-border-light-grey w3-padding">Bilder</h3>
         <img id="viewer" class="imageViewer" src=""/>
+        <br>
         <button class="w3-button" onclick="changePicture(-1)">&#10094;</button>
         <button class="w3-button" onclick="changePicture(1)">&#10095;</button>
         <p id="info" class="textViewer">  
@@ -71,6 +65,8 @@
           
     <!-- Yr.no Integration -->
     <div id="weather" class="w3-container w3-center" style="width:100%; opacity:0.95">
+      
+      <h3 id="images" class="w3-border-bottom w3-border-light-grey w3-padding">Været</h3>
 
       <script src="http://www.yr.no/place/Norway/Rogaland/Eigersund/Stapnes/external_box_three_days.js"></script>
       <noscript>
