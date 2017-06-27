@@ -1,4 +1,4 @@
-var baseUrl = 'images';
+var baseUrl = 'images/';
 var pictureIndex = 0;
 var pictures = [];
 
