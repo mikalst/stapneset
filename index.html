@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Stapneset</title>
+<title>Stapneset.no</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -25,7 +25,7 @@
 <!-- Navbar -->
 <div class="">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
-    <a href="#home" class="w3-bar-item w3-button"><b>Stapneset</b> </a>
+    <a href="#home" class="w3-bar-item w3-button"><b>Stapneset.no</b> </a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="#weather" class="w3-bar-item w3-button">Vær</a>
@@ -47,15 +47,7 @@
 <!-- About and Image Section -->
 <div class="w3-row">
   <div class="w3-container w3-padding" id="about">
-      
-    <!-- Yr.no Integration -->
-    <div id="weather" class="w3-container w3-center" style="width:100%; opacity:0.95">
 
-      <script src="http://www.yr.no/place/Norway/Rogaland/Eigersund/Stapnes/external_box_three_days.js"></script>
-      <noscript>
-          <a href="http://www.yr.no/place/Norway/Rogaland/Eigersund/Stapnes/">yr.no: Forecast for Stapnes</a>
-      </noscript>
-    </div>
   </div>
 </div>
 
@@ -77,11 +69,14 @@
         </p>
       </div>
           
-      <div class="w3-container w3-center" id="map">
-        <h3 class="w3-border-bottom w3-border-light-grey w3-padding">Kart</h3>
-        <div id="googleMap" class="w3-container w3-padding w3-center" style="height:300px">
-        </div>
-      </div>
+    <!-- Yr.no Integration -->
+    <div id="weather" class="w3-container w3-center" style="width:100%; opacity:0.95">
+
+      <script src="http://www.yr.no/place/Norway/Rogaland/Eigersund/Stapnes/external_box_three_days.js"></script>
+      <noscript>
+          <a href="http://www.yr.no/place/Norway/Rogaland/Eigersund/Stapnes/">yr.no: Forecast for Stapnes</a>
+      </noscript>
+    </div>
         
     </div>      
     
@@ -105,29 +100,6 @@
 
 
 <!-- ### Scripts ### -->
-<!-- Google Maps -->
-<script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(58.382791, 6.040923);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpVhiQkBylimWSSohdaS8KHj-8ecI59_Y&callback=myMap"></script>
-
-<!-- Images -->
-<script src="slideshow.js"></script>
 
 <!-- Twitter Integration -->
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
