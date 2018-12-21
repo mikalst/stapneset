@@ -2,7 +2,7 @@
 /*global $, jQuery, alert, console*/
 
 var baseUrl = 'images/';
-var pictureIndex = 0;
+var pictureIndex = 1;
 var pictures = [];
 
 $.getScript('imageText.js');
