@@ -5,7 +5,7 @@ var baseUrl = 'images/';
 var pictureIndex = 1;
 var pictures = [];
 
-$.getScript('imageText.js');
+$.getScript('image_text.js');
 
 function getFiles() {
     "use strict";
