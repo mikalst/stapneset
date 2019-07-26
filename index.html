@@ -14,7 +14,7 @@
 <!-- Scripts -->
 <script src="jquery.js"></script>
 <script src="image_viewer.js"></script>
-<script src="additional_scripts.js"></script>
+
 
 <!-- Stylesheets -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -49,36 +49,37 @@
 
 <div class="w3-row">
 
-    <!-- Twitter -->
-    <div class="w3-container w3-padding w3-third w3-center">
-        <div class="w3-container w3-center" style="overflow: hidden">
-            <h3 id="twitter" class="w3-border-bottom w3-border-light-grey w3-padding">Twitter</h3>
-            <a class="twitter-timeline"  href="https://twitter.com/hashtag/stapneset" data-widget-id="875319488304099328" data-height="900px">#stapneset Tweets</a>
-        </div>
-    </div>
-    
-    <!-- Images -->
-    <div class="w3-container w3-padding w3-twothird w3-center">
+  <!-- Twitter -->
+  <div class="w3-container w3-padding w3-third w3-center">
       <div class="w3-container w3-center" style="overflow: hidden">
-        <h3 id="images" class="w3-border-bottom w3-border-light-grey w3-padding">Bilder</h3>
-        <img id="viewer" class="imageViewer" src=""/>
-        <br>
-        <button class="w3-button" onclick="changePicture(-1)">&#10094;</button>
-        <button class="w3-button" onclick="changePicture(1)">&#10095;</button>
-        <p id="info" class="textViewer">  
-        </p>
+          <h3 id="twitter" class="w3-border-bottom w3-border-light-grey w3-padding">Twitter</h3>
+          <a class="twitter-timeline"  href="https://twitter.com/hashtag/stapneset" data-widget-id="875319488304099328" data-height="900px">#stapneset Tweets</a>
       </div>
-          
+  </div>
+  
+  <!-- Images -->
+  <div class="w3-container w3-padding w3-twothird w3-center">
+    <div class="w3-container w3-center" style="overflow: hidden">
+      <h3 id="images" class="w3-border-bottom w3-border-light-grey w3-padding">Bilder</h3>
+      <img id="viewer" class="imageViewer" src=""/>
+      <br>
+      <button class="w3-button" onclick="changePicture(-1)">&#10094;</button>
+      <button class="w3-button" onclick="changePicture(1)">&#10095;</button>
+      <p id="info" class="textViewer">  
+      </p>
+    </div>   
+
     <!-- Yr.no Integration -->
-    <div id="weather" class="w3-container w3-center" style="width:100%; opacity:0.95">
-          <h3 id="weather2" class="w3-border-bottom w3-border-light-grey w3-padding">Været</h3>
-          <script src="http://www.yr.no/place/Norway/Rogaland/Eigersund/Stapnes/external_box_three_days.js"></script>
-          <noscript>
-              <a href="http://www.yr.no/place/Norway/Rogaland/Eigersund/Stapnes/">yr.no: Forecast for Stapnes</a>
-          </noscript>
-    </div>    
-    </div>      
-    
+
+    <div class="w3-container w3-center" style="width:100%; opacity:0.95">
+      <h3 id="weather" class="w3-border-bottom w3-border-light-grey w3-padding">Været</h3>
+      <div id="weathertesting">
+      Test
+      </div>
+    </div>
+
+  </div>   
+  
 </div>
           
   <!-- Contact Section -->
@@ -104,7 +105,7 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 <!-- Weather -->
-<script src="weather.js"></script>
+<script src="additional_scripts.js"></script>
 
 
 </body>
