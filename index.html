@@ -14,6 +14,7 @@
 <!-- Scripts -->
 <script src="jquery.js"></script>
 <script src="image_viewer.js"></script>
+<script src="additional_scripts.js"></script>
 
 
 <!-- Stylesheets -->
@@ -48,14 +49,6 @@
 <div class="w3-content w3-center" style="max-width:1564px; width:100%">
 
 <div class="w3-row">
-
-  <!-- Twitter -->
-  <div class="w3-container w3-padding w3-third w3-center">
-      <div class="w3-container w3-center" style="overflow: hidden">
-          <h3 id="twitter" class="w3-border-bottom w3-border-light-grey w3-padding">Twitter</h3>
-          <a class="twitter-timeline"  href="https://twitter.com/hashtag/stapneset" data-widget-id="875319488304099328" data-height="900px">#stapneset Tweets</a>
-      </div>
-  </div>
   
   <!-- Images -->
   <div class="w3-container w3-padding w3-twothird w3-center">
@@ -70,15 +63,20 @@
     </div>   
 
     <!-- Yr.no Integration -->
-
     <div class="w3-container w3-center" style="width:100%; opacity:0.95">
       <h3 id="weather" class="w3-border-bottom w3-border-light-grey w3-padding">Været</h3>
-      <div id="weathertesting">
-      Test
-      </div>
+      <canvas id="myChart"></canvas>
     </div>
 
   </div>   
+
+    <!-- Twitter -->
+    <div class="w3-container w3-padding w3-third w3-center">
+        <div class="w3-container w3-center" style="overflow: hidden">
+            <h3 id="twitter" class="w3-border-bottom w3-border-light-grey w3-padding">Twitter</h3>
+            <a class="twitter-timeline" data-height="900" href="https://twitter.com/realMikalst/lists/stapneset?ref_src=twsrc%5Etfw">A Twitter List by realMikalst</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+        </div>
+    </div>
   
 </div>
           
@@ -102,10 +100,10 @@
 <!-- Scripts -->
 
 <!-- Twitter Integration -->
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 <!-- Weather -->
-<script src="additional_scripts.js"></script>
+<script src="chart.js"></script>
+<script src="weather.js"></script>
 
 
 </body>
