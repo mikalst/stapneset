@@ -1,0 +1,7 @@
+FROM bash
+
+# Create app directory
+WORKDIR /home
+
+# Run
+CMD [ "sh", "script_fetch_weather_data.sh" ]
